@@ -1,0 +1,25 @@
+<html>
+<body>
+<h3>Wordle Clone</h3>
+<ol>
+    <% for (let guess of game.guesses) { %>
+    <li><%= guess %></li>
+    <% } %>
+</ol>
+<% if (guessIncorrect) { %>
+<p>Sorry, your guess is wrong</p>
+<% } %>
+<% if (gameState.isWon) { %>
+    <p>You have guessed the correct word <%= game.correctWord %></p>
+<% } %>
+<form action="/game/<%= game.id %>" method="post">
+    <input name="guess"/>
+    <button <%= gameState.isDone ? "disabled=\"disabled\"" : "" %>">submit guess</button>
+</form>
+<% if (gameState.isDone) { %>
+    <form method="post" action="/game">
+        <button>Start New Game</button>
+    </form>
+<% } %>
+</body>
+</html>

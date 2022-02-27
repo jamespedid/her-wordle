@@ -1,0 +1,9 @@
+Goal of this exercise is to recreate as much of the game wordle in under two hours while over-explaining everything that I'm doing. The purpose of this exercise is to see how a professional software developer works. Feel free to shout out when you see that I made a mistake, or ask any question along the way!
+
+Rules:
+    1. No client side javascript - everything must be done with HTTP transactions.
+    2. No cheating - All the code for the game wordle must be written by myself. It's ok for me to look things up on the internet when stuck.
+    3. Third party libraries such as express are allowed and will be used. AKA If the code doesn't pertain to the wordle implementation, it's fair game to use.
+    4. I will start from scratch -- no files prepopulated in the project
+
+Note that I'm no longer using Visual Studio Code; instead I'm using my normal IDE, which is JetBrains' WebStorm
